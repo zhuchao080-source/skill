@@ -28,7 +28,7 @@ Follow this order for image-led ecommerce detail-page work:
 3. Produce the pre-generation direction package and fully list three sections: `文案方向`, `风格方向`, and `画面方向`.
 4. Stop for direction confirmation.
 5. Produce the complete page blueprint from the confirmed direction.
-6. Establish the text master, visual master, product-structure lock, IP style master when relevant, and optional 1:3 spatial master.
+6. Establish the text master, including a complete per-screen copy flow, then establish the visual master, product-structure lock, IP style master when relevant, and optional 1:3 spatial master.
 7. Generate screen 01 and screen 02 only as the first visual sample package.
 8. Stitch screen 01 and screen 02 into a short preview when useful.
 9. Audit the sample package.
@@ -136,8 +136,7 @@ The final style must satisfy all three. Do not make every IP product automatical
 Examples:
 
 - Sanrio / Hello Kitty electronics can use soft pink, cream, bedroom gift, vanity desk, and gentle girl-cute styling when aimed at young female or gift buyers.
-- PINGU products should avoid ice, snow, glaciers, and winter-only worlds unless the user explicitly asks for them. Use sky blue, light blue, cream yellow, warm white, black-white product/IP contrast, and small red/orange accents for student, gift, or daily-use buyers.
-- MarTUBE-style PINGU product pages should be treated as cool-cute daily electronics and giftable collectibles: blue page frame, cream/yellow warm base, small red/orange accents, tote/backpack portability, desk, room, gift, package, shelf, or summer daily-use scenes, clear core-grid proof, and product-first hero layout.
+- PINGU products should use cool-cute, playful, giftable, daily-electronics styling, with the same complete style treatment as other authorized IPs: shallow blue / sky blue / baby blue as the recognizable base, controlled clash colors chosen from yellow, red/orange, pink, purple, cream/warm white, or black/white neutrals, paper-board title cards, sticker/tape rhythm, rounded props, desk/room/gift/shelf/tote/backpack/daily-carry scenes, and clear product-first ecommerce hierarchy. Do not use green, mint, teal-green, grass green, dark navy main fields, ice, snow, glaciers, igloos, winter-only worlds, empty catalog pedestals, or incorrect PINGU/Pingu text such as `Pinga`.
 - Crayon Shin-chan products can use brighter playful life scenes, comic labels, and warm color accents, while staying readable and product-first.
 - tokidoki products can use colorful pop, sticker density, acrylic display, and collector energy when the target buyer likes trend toys or IP collecting.
 - Brunch Brothers products can use warm cream, food-inspired desk scenes, soft morning light, and relaxed cute layouts.
@@ -158,14 +157,14 @@ The direction package must include:
 - **Project context status**: state whether this is a new project, whether previous product context has been cleared, and which current sources are being used.
 - **Buyer-angle selling points**: buyer type, category concerns, 2-4 selected claim seeds, and proof level for each claim.
 - **Copy direction**: core selling proposition, 2-4 first-screen claim seeds, visible-copy tone, suggested headline style, short selling-point wording, and unsupported claims to avoid.
-- **Style direction**: IP identity, product category tone, target audience, style-fit reason, palette, analogous color extension, small contrast-color accents, lighting, typography direction, text layout reference, card/icon language, prop density, PINGU one-extra-character-per-screen rule when relevant, layout diversity plan, and commercial-font/IP-text safety rule.
+- **Style direction**: IP identity, product category tone, target audience, style-fit reason, palette, analogous color extension, controlled clash-color / contrast-color plan, required two-or-more color families per scene, lighting, typography direction, text layout reference, card/icon language, prop density, PINGU one-extra-character-per-screen rule when relevant, layout diversity plan, and commercial-font/IP-text safety rule.
 - **Visual content direction**: planned hero product treatment, scene-rendering route, required scenes, model-use scene, backpack portability scene, packaging/list treatment, props, product rendering style, product angles, product scale rhythm, foreground/background placement, background-color relationship, first-screen title placement, PINGU character count when relevant, and what must not be hidden.
 - **Structure and claim guardrails**: product DNA summary, package lock, confirmed facts, visible facts, reasonable inferences, and unknowns that remain "以实际参数为准".
 
 Map the bullets into the three headings instead of outputting them as scattered notes:
 
 - Put copy proposition, buyer-angle selling points, first-screen claim seeds, headline/copy tone, and unsupported claims under `文案方向`.
-- Put IP identity, product category tone, target audience, palette, typography, layout mood, scene-rendering route, prop density, color strategy, and font/IP safety under `风格方向`.
+- Put IP identity, product category tone, target audience, palette, typography, layout mood, scene-rendering route, prop density, color strategy, controlled clash-color plan, two-or-more color-family rule, and font/IP safety under `风格方向`.
 - Put hero composition, screen-01 product focus, model-use requirement, backpack portability requirement, screen-02 grid proof plan, product angles, scale/depth rhythm, background relationship, packaging/list treatment, PINGU character count, and hidden-structure risks under `画面方向`.
 
 After the three sections are fully listed, end with a clear confirmation question such as `请确认这三个方向，确认后我再生成完整蓝图。` Do not write the screen-by-screen blueprint until the user confirms this direction package. If the user revises the direction, update the direction package first, then continue to the blueprint.
@@ -191,6 +190,9 @@ Each screen must include:
 - `color_strategy`
 - `copy_module_type`
 - `copy_structure_pattern`
+- `main_title`
+- `subtitle`
+- `visual_content_description`
 - `primary_module`
 - `secondary_modules`
 - `text_exact`
@@ -243,7 +245,9 @@ When the user supplies detail-page references for text layout, borrow their typo
 
 Use diverse detail-page layouts. For 11-13 screen ecommerce pages, use at least 8 distinct layout archetypes. For 8-screen pages, use at least 5 distinct layout archetypes. Adjacent screens must not use the same visual grammar, text rhythm, product scale, and card structure at the same time. Borrow only layout language from user-supplied reference pages, such as large hero product, sticker callouts, multi-card overview, macro magnifier, diagonal product angle, hand operation, backpack portability, polaroid/photo frame, comic speech bubble, split color block, step sequence, package/list grid, parameter sheet, and SKU collection. Do not copy the reference page's exact text, fonts, official IP elements, character art, logo treatment, or unrelated product details.
 
-Use a controlled color system for scene style and detail-page layout. Start from the product/IP base colors, then add neighboring analogous colors to enrich backgrounds, cards, props, and transitions. Use a small amount of contrast color only for visual emphasis such as stickers, arrows, badges, small icons, key separators, or tiny decorative accents. Contrast accents must stay secondary and should not overpower the product, change real SKU colors, reduce text readability, or make the page look like a different IP/product series.
+Use a controlled but visually stronger color system for scene style and detail-page layout. Start from the product/IP base colors, add neighboring analogous colors to enrich backgrounds, cards, props, and transitions, and allow controlled clash-color / contrast-color pairings to increase visual impact. Every generated scene must contain at least two clearly different color families, such as blue+yellow, pink+mint, red+cyan, purple+yellow, cream+blue, or orange+green. Do not make a whole scene, full page, or screen feel like only one color family.
+
+Use clash colors for title boards, cards, props, badges, stickers, small icons, separators, or background blocks that guide the eye. For hero and proof screens, the clash relationship should help the product stand out. For lifestyle screens, it can make the environment more energetic while keeping the product readable. Do not let clash colors overpower the product, change real SKU colors, reduce text readability, damage IP tone, or make the page look like a different product series.
 
 Before approval 1, audit the blueprint:
 
@@ -260,16 +264,34 @@ Before approval 1, audit the blueprint:
 - Product DNA and package locks are present where the product or packaging appears.
 - IP tone, scene choice, title hierarchy, and typography fit the target audience without adding unsupported claims, fake legal text, or commercial font names.
 
+## Copy Flow
+
+When entering the `文案流程` / text master stage, output a complete per-screen copy-and-visual plan before writing final image prompts. Do not only give overall copy direction.
+
+For every planned screen, list:
+
+- `slice_id`
+- `屏幕任务`: the buyer question and selling-point role.
+- `大标题`: the visible main title for this screen.
+- `小标题`: the visible subtitle or supporting line for this screen.
+- `画面内容描述`: a detailed description of the screen image content, including main product, product angle, product size, front/back/high/low placement, props, model/hand or no-model choice, background, color relationship, and why this composition supports the selling point.
+- `文字排版`: where the large title, subtitle, labels, cards, callouts, or captions sit, and what they must not cover.
+- `卖点依据`: confirmed fact / visible fact / reasonable inference / unknown placeholder.
+
+The copy flow must cover all screens in the planned detail page, not only screen 01 and screen 02. If exact parameters are unavailable, keep the title and subtitle soft, mark the proof as `reasonable inference` or `unknown`, and reserve parameter positions as `以实际参数为准`.
+
+Use this copy flow as the source for `text_exact`, prompt text instructions, and later audit. If the user asks only for copy planning, stop after the complete per-screen copy flow. If the user asks to continue image generation, continue from this text master without silently changing the approved titles or visual descriptions.
+
 ## Masters
 
 After approval 1, establish the masters before final slices.
 
 Create:
 
-- **Text master**: exact visible Chinese copy, screen-01 title placement rule, text layout reference, copy hierarchy, claim-source notes, parameter placeholders, and prohibited wording.
-- **Visual master**: product rendering style, color system, analogous color extension, contrast accent limits, lighting direction, background material, product angle rules, product scale rhythm, foreground/background placement rules, product-background visibility relationship, typography, text layout system, icon style, card radius, shadow, margins, prop level, SKU rules, continuity motifs, layout diversity plan, and per-screen pacing.
+- **Text master**: exact visible Chinese copy, complete per-screen copy flow with `大标题`, `小标题`, and `画面内容描述`, screen-01 title placement rule, text layout reference, copy hierarchy, claim-source notes, parameter placeholders, and prohibited wording.
+- **Visual master**: product rendering style, color system, analogous color extension, controlled clash-color / contrast-color plan, two-or-more color-family rule, lighting direction, background material, product angle rules, product scale rhythm, foreground/background placement rules, product-background visibility relationship, typography, text layout system, icon style, card radius, shadow, margins, prop level, SKU rules, continuity motifs, layout diversity plan, and per-screen pacing.
 - **Scene-rendering route master**: state whether the project uses product-led 3D/cartoon ecommerce scenes, realistic lifestyle model scenes, or a mixed route. For low-model electronics, keep screen 01 and most proof screens product-rendered with pedestal/card/desktop staging. For blow dryers and other person-heavy products, use a realistic lifestyle route for screen 01 and key use screens, with the model supporting the product rather than becoming the product.
-- **IP style master**: IP identity, product category tone, target audience, style-fit reason, palette, analogous color extension, contrast accent limits, scene direction, prop choices, optional PVC-style figure accent rule, composition density, and safe typography rule.
+- **IP style master**: IP identity, product category tone, target audience, style-fit reason, palette, analogous color extension, controlled clash-color / contrast-color plan, two-or-more color-family rule, scene direction, prop choices, optional PVC-style figure accent rule, composition density, and safe typography rule.
 - **Product master lock**: product DNA summarized as prompt-ready hard constraints and negative constraints.
 - **Package master lock**: package shape, visible faces, official art areas, placeholder text areas, and no-AI-small-text instructions.
 - **Optional 1:3 spatial master**: use when visual continuity matters. It anchors background world, lighting, product scale rhythm, recurring motifs, section transitions, and copy hierarchy. It is not a final crop source.
@@ -294,7 +316,7 @@ Every prompt must begin with a product-faithfulness base:
 
 Then add the screen-specific composition, copy, text layout reference, hierarchy, layout archetype, layout variation reason, product rendering style, product angle reason, product scale/depth reason, product-background relationship, first-screen title layout reason when relevant, edge anchors, and style notes from the approved blueprint.
 
-When an IP style is involved, add the approved IP style direction after the product-faithfulness base. Keep the product and supplied artwork accurate; use the authorized IP mood to guide scene, palette, props, title hierarchy, and layout. The scene and layout palette may add neighboring analogous colors and a small amount of contrast-color accents for stickers, arrows, badges, icons, or small decoration, but the product's real SKU colors and official artwork colors must remain unchanged. For Sanrio, Crayon Shin-chan, PINGU, Disney, tokidoki, Brunch Brothers, and similar IP products, girl-cute, cute, giftable, and collectible styling is allowed when it fits the target audience. For PINGU, each screen may include at most one extra PINGU scene character outside product/package artwork. Small glossy PVC-style figure props may be used as secondary accents, but do not add legal small print, authorization codes, unsupported slogans, commercial-font names, or props that imply unconfirmed bundle contents.
+When an IP style is involved, add the approved IP style direction after the product-faithfulness base. Keep the product and supplied artwork accurate; use the authorized IP mood to guide scene, palette, props, title hierarchy, and layout. The scene and layout palette may add neighboring analogous colors and controlled clash-color / contrast-color pairings for title boards, background blocks, cards, stickers, arrows, badges, icons, or small decoration. Every scene should include at least two different color families so the image does not become monochrome. The product's real SKU colors and official artwork colors must remain unchanged. For Sanrio, Crayon Shin-chan, PINGU, Disney, tokidoki, Brunch Brothers, and similar IP products, girl-cute, cute, giftable, and collectible styling is allowed when it fits the target audience. For PINGU, each screen may include at most one extra PINGU scene character outside product/package artwork. Small glossy PVC-style figure props may be used as secondary accents, but do not add legal small print, authorization codes, unsupported slogans, commercial-font names, or props that imply unconfirmed bundle contents.
 
 Apply the approved scene-rendering route in every prompt:
 
@@ -334,7 +356,7 @@ Do not expand the deliverable count beyond these rules or the user's request wit
 
 ## Audit And Revision Routing
 
-Fail a result if it contains product redesign, wrong proportions, wrong port/button/screen/line/hinge position, missing real structure, extra parts, wrong SKU color, wrong package shape, invented parameters, fake legal/authorization text, unsupported IP slogans or bundle claims, more than one extra PINGU scene character in a PINGU screen, PVC-style figures that dominate or imply unconfirmed accessories, commercial-font names, unreadable critical text, copied unrelated reference text, distorted or unreliable AI-rendered official wordmarks, contrast colors that overpower the product, palette shifts that change the product/IP identity, repeated standalone-poster layouts, repeated adjacent layout grammar, insufficient layout diversity, or broken page continuity.
+Fail a result if it contains product redesign, wrong proportions, wrong port/button/screen/line/hinge position, missing real structure, extra parts, wrong SKU color, wrong package shape, invented parameters, fake legal/authorization text, unsupported IP slogans or bundle claims, more than one extra PINGU scene character in a PINGU screen, PINGU rendered with dark navy as the main mood when the user wants light blue, green/mint/teal-green elements in a PINGU scene, PVC-style figures that dominate or imply unconfirmed accessories, commercial-font names, unreadable critical text, copied unrelated reference text, distorted or unreliable AI-rendered official wordmarks, PINGU/Pingu product text changed to incorrect words such as Pinga, contrast colors that overpower the product, a scene that uses only one color family, palette shifts that change the product/IP identity, repeated standalone-poster layouts, repeated adjacent layout grammar, insufficient layout diversity, or broken page continuity.
 
 Also fail a result when the product angle does not prove the claimed selling point, the product is too small for the screen job, the depth relationship hides the product, the background makes the product disappear, or the screen-01 title competes with or covers the product identity.
 

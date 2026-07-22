@@ -13,6 +13,7 @@ Use these patterns as starting points. Adapt them to the product, audience, plat
 - Product Rendering, Angle, Scale, And Depth
 - Product-Background Visibility
 - Layout Diversity Patterns
+- PINGU Contrast-Color Layout Reference
 - Lightweight 8-Screen Order
 - Blueprint Fields
 - Copy And Hierarchy Rules
@@ -32,7 +33,7 @@ Default route:
 3. Establish product DNA, package lock, claim-source categories, and unknowns from current inputs only.
 4. Fully list `文案方向`, `风格方向`, and `画面方向`; stop for direction confirmation.
 5. Produce a full screen-by-screen blueprint from the confirmed direction.
-6. Build text master, visual master, product hard-constraint prompt, package prompt, and optional 1:3 spatial master.
+6. Build text master with a complete per-screen copy flow, then build visual master, product hard-constraint prompt, package prompt, and optional 1:3 spatial master.
 7. Generate screen 01.
 8. Generate screen 02.
 9. Stitch a 2-slice preview when useful and audit continuity/style.
@@ -128,11 +129,14 @@ Build detail-page color from the product and IP, then expand it without changing
 - **Base colors**: take from the real product, confirmed SKU colors, package, supplied IP artwork, or approved style direction.
 - **Analogous colors**: add neighboring hues to make scenes and layouts richer. Use them for backgrounds, cards, shadows, soft props, ribbons, transitions, and section rhythm.
 - **Contrast accents**: use only a small amount for stickers, arrows, badge corners, icon dots, separators, small labels, sparkles, or callout highlights.
-- **Suggested balance**: base and analogous colors should dominate the page. Contrast accents should remain visually secondary, normally a small area of the screen rather than a large background.
+- **Clash-color impact**: allow controlled 撞色 / clash-color pairings when the page needs stronger visual impact. Use them for title boards, background blocks, cards, pedestals, badges, stickers, and prop groups that guide the viewer back to the product.
+- **Two-family minimum**: every generated scene should include at least two clearly different color families. Examples: blue+yellow, pink+mint, red+cyan, purple+yellow, cream+blue, orange+green, or black/white product contrast plus a warm/cool scene color. Do not make a screen look entirely blue, entirely pink, entirely cream, or otherwise monochrome.
+- **Suggested balance**: base and analogous colors should establish the page identity. Clash/contrast colors may be more visible than tiny accents when impact is needed, but they must remain controlled and purposeful.
 - **Product safety**: never recolor the product body, SKU, logo, official artwork, package face, or accessory to fit the palette.
 - **Readability**: text cards need enough contrast; decorative contrast colors must not sit behind dense body copy unless readability is clear.
 - **IP safety**: do not use contrast accents to imitate protected wordmarks, official logos, or another IP's signature system.
 - **Continuity**: vary analogous color proportions across screens, but keep the same color family so the long page reads as one set.
+- **Impact audit**: fail a screen if it is visually flat because all backgrounds, props, cards, and text areas use one color family, or if clash colors overpower the product and reduce structure clarity.
 
 Examples:
 
@@ -318,6 +322,49 @@ Suggested pacing for 11-13 screens:
 
 Adapt the order to the actual product. The goal is varied information architecture, not forced decoration.
 
+## PINGU Contrast-Color Layout Reference
+
+Use this section when the user asks to follow supplied PINGU blow-dryer, earphone, or MarTUBE-style references. Treat PINGU with the same complete IP-page system used for Sanrio, Crayon Shin-chan, and other strong IP products: IP-fit palette, buyer-fit scene, product-first composition, paper/sticker title hierarchy, rich props, varied modules, and strict product structure. Borrow the information system, not exact text or official assets.
+
+### Scene And Color
+
+- Use shallow blue / sky blue / baby blue as the PINGU base, then clash it with one controlled contrast family such as yellow, red/orange, pink, purple, cream/warm white, or black/white neutrals. Do not use green, mint, teal-green, grass green, dark navy main fields, ice, snow, glaciers, igloos, or winter-only scenes.
+- Keep at least two color families in every scene. Use light blue for the page/frame/title family, another color for title boards/cards/props, neutral white or cream for readability, and small red/orange accents only when they help PINGU memory points.
+- Build the same density as strong IP references: paper boards, tape corners, torn-paper edges, dotted texture, sticker outlines, cards, notebooks, clouds, stars, music notes, round pedestals, gift boxes, pouches, and soft shadows. Avoid empty studio-pedestal outputs.
+- In realistic model screens, keep the same palette but use believable daily spaces such as room, vanity, dorm, desk, bathroom counter, or lifestyle shelf.
+
+### First Screen Layout
+
+- Use a vertical detail-page hero unless the user explicitly asks for a square main image. Build a strong product-first hero with rich IP layout language: large paper-board title, subtitle strip, tape corners, sticker accents, layered props, and foreground/midground/background depth.
+- Place the title at the top or upper-left as a notebook-card, paper-board, torn-paper, or sticker panel. Connect it to the product through proximity, alignment, diagonal rhythm, product scale, and overlap. Do not cover product identity structures.
+- For blow dryers, use model出镜 with the model behind the product and the hand holding the dryer forward. The dryer is closest to camera, with visible outlet/nozzle, barrel, handle, buttons, fold joint, cord state, and IP artwork.
+- For earphones and other low-model electronics, use rendered product staging with confirmed colors/SKUs on high/low pedestals. Guide the eye by arranging product positions, scale, height, overlap, and front/back staggering, not by drawing guide lines.
+- If only a charging case is structurally confirmed, do not invent earbud shapes. Use the confirmed case angles and SKU colors until the user supplies more product structure.
+
+### Screen 02 Core Grid
+
+- Use a six-point card grid, preferably 2 columns x 3 rows.
+- Put the whole grid in a paper-board or colored-frame card container from the selected contrast palette.
+- Every card needs one simple icon or product crop, one short title, one one-line explanation, and a small decorative accent.
+- Keep card rhythm even, with enough neutral white/cream or low-saturation space for readability.
+- Use buyer-facing points, for example: IP appearance, wind/sound experience, comfort/use, portability, charging/power, storage, SKU/color, or giftability depending on the category and available proof.
+
+### Copy Layout
+
+- Use repeated paper title boards with light-blue frame/shadow as the section language, but vary their position, card shape, and surrounding modules across screens.
+- Use bold readable Chinese for the main phrase, selected blue or contrast color for key emphasis, and red/orange only as small attention marks.
+- Keep subtitles compact and place them under the title board, in a smaller strip, or inside a clean supporting card.
+- Use sticker badges, small arrows, rounded labels, mini cards, icon captions, and speech-bubble notes only when they point to real product proof.
+- Do not place long text over busy blue backgrounds. Dense copy should sit on white, cream, or pale-yellow cards.
+
+### Page Rhythm
+
+- Alternate between hero, six-grid overview, macro structure, performance/effect proof, model/use proof, hand/bag portability, SKU/color display, packaging/list, and parameter sheet.
+- Keep the paper-title system consistent, but vary product angle, product scale, card position, model/hand presence, and background prop density.
+- Adjacent screens should not repeat the same composition of `title board + centered product + three badges`.
+- PINGU detail pages may use hearts, music notes, clouds, stars, paper clips, tape, dotted texture, and sticker accents, but each screen still allows at most one extra PINGU scene character outside product/package artwork. If the product already has strong PINGU artwork, prefer paper/sticker rhythm over adding another character prop.
+- Preserve visible PINGU/Pingu text. Wrong text such as `Pinga` is a failed output.
+
 ## Lightweight 8-Screen Order
 
 Use this when the user explicitly asks for 8 screens, the product information is light, the page is not China-marketplace focused, or the subject is an AI tool/SaaS/developer product.
@@ -347,9 +394,12 @@ Each screen blueprint should include:
 - `content_density`: `low`, `medium`, or `high`.
 - `layout_archetype`: layout intent, not a rigid template. For screen 02, this must be `core_selling_point_grid`.
 - `layout_variation_reason`: how this layout differs from the previous and next screen.
-- `color_strategy`: base color, analogous extension, contrast accent color, and where each color appears.
+- `color_strategy`: base color, analogous extension, clash/contrast color plan, at least two color families, and where each color appears.
 - `copy_module_type`: visible-copy form, such as hero headline, guide title, Q&A, labels, annotation map, icon bullets, scene captions, parameter table, trust checklist, comparison snippets, or CTA.
 - `copy_structure_pattern`: sentence/module rhythm, such as `hero_claim_stack`, `question_answer`, `overview_cards`, `annotation_map`, `three_point_breakdown`, `scene_caption_cluster`, `mini_steps`, `trust_checklist`, `parameter_rows`, or `quiet_closing`.
+- `main_title`: visible large title / 大标题 for this screen.
+- `subtitle`: visible subtitle / 小标题 or supporting line for this screen.
+- `visual_content_description`: detailed screen image description, including product angle, product scale, front/back placement, high/low staging, props, model/hand relation, background, color relationship, and why the composition supports the selling point.
 - `primary_module`: main visual and message.
 - `secondary_modules`: 1-3 supporting modules when appropriate.
 - `text_exact`: visible Chinese copy only.
@@ -383,14 +433,14 @@ Before writing the blueprint, confirm the direction package. The direction packa
 
 - `copy_direction`: claim seeds, copy tone, headline style, key phrases, and banned claims.
 - `buyer_angle_selling_points`: buyer type, category concerns, selected claim seeds, and proof level for each claim.
-- `style_direction`: target audience, IP mood, palette, analogous color extension, contrast accent rule, lighting, typography, text layout reference, card/icon language, and prop density.
+- `style_direction`: target audience, IP mood, palette, analogous color extension, controlled clash/contrast rule, two-or-more color-family rule, lighting, typography, text layout reference, card/icon language, and prop density.
 - `visual_content_direction`: hero focus, model-use idea, backpack portability idea, packaging/list idea, scene props, product angles, and layout diversity route.
 - `project_context_status`: confirm this is a new project and previous product information has not been carried over, unless the user explicitly requested continuation.
 
 Map the internal fields into the visible headings:
 
 - `文案方向`: buyer-angle selling points, first-screen claim seeds, headline style, copy tone, key phrases, claim-source proof level, and banned/unsupported claims.
-- `风格方向`: IP mood, target audience, product category tone, color palette, neighboring analogous colors, contrast accent limits, typography safety, scene-rendering route, prop density, and layout mood.
+- `风格方向`: IP mood, target audience, product category tone, color palette, neighboring analogous colors, controlled clash/contrast plan, two-or-more color-family rule, typography safety, scene-rendering route, prop density, and layout mood.
 - `画面方向`: hero product focus, screen-01 title placement, screen-02 core grid plan, model-use scene, backpack portability scene, packaging/list scene, product angle logic, scale/depth rhythm, product-background relationship, and visible structure risks.
 
 End the direction package with a confirmation line such as `请确认这三个方向，确认后我再生成完整蓝图。` Do not advance to the blueprint until the user confirms or revises these directions.
@@ -398,6 +448,18 @@ End the direction package with a confirmation line such as `请确认这三个�
 ## Copy And Hierarchy Rules
 
 Screen 01 may use the clearest headline/subtitle structure. Later screens should not all become new campaign openers.
+
+When producing the `文案流程` or text master, output a complete screen-by-screen copy-and-visual plan before final prompt writing. For every planned screen, list:
+
+- `slice_id`
+- `屏幕任务`: buyer question and selling-point role.
+- `大标题`: the visible main title.
+- `小标题`: the visible subtitle or support line.
+- `画面内容描述`: detailed image content, including main product, product angle, product size, front/back/high/low placement, props, model/hand or no-model route, background, palette relationship, and why the arrangement proves the selling point.
+- `文字排版`: title/subtitle/card/callout/caption placement and what product structure they must not cover.
+- `卖点依据`: confirmed fact, visible fact, reasonable inference, or unknown placeholder.
+
+This copy flow must cover all planned screens. Do not output only a general copy direction or only the first two screens. Use it as the source for `main_title`, `subtitle`, `visual_content_description`, and `text_exact`. If exact parameters are missing, keep the copy soft and reserve fields as `以实际参数为准`.
 
 Use varied copy forms:
 
@@ -622,7 +684,7 @@ Score each area as pass, needs work, or missing:
 - Text layout references are used as arrangement language without copying exact reference text or protected wordmarks.
 - Layout archetypes are diverse enough for the selected screen count.
 - Adjacent screens do not repeat the same product scale, copy rhythm, and card structure.
-- Color strategy uses product/IP base colors, neighboring analogous colors, and only small contrast accents.
+- Color strategy uses product/IP base colors, neighboring analogous colors, controlled clash/contrast colors, and at least two different color families per scene.
 - Contrast accents do not overpower the product or damage readability.
 - Product structure, SKU color, packaging, and accessories remain consistent.
 - Main-image count follows final detail-page slice count when the project requires post-detail main images.
