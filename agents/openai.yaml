@@ -1,4 +1,0 @@
-interface:
-  display_name: "zhuchao的SKILL"
-  short_description: "输入“生成新的详情页”，规划并审核产品保真的电商详情页。"
-  default_prompt: "生成新的详情页"
